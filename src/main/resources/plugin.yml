@@ -14,11 +14,11 @@ commands:
     permission: huntpoint.admin
     permission-message: You do not have permission to use this command.
   huntmode:
-    description: Sets player into hunt mode, allowing them to edit huntpoints by left-clicking
+    description: Sets player into hunt mode, allowing them to edit hunt points by left-clicking
     usage: /huntmode
     permission: huntpoint.admin
     permission-message: You do not have permission to use this command.
 
 permissions:
   huntpoint.admin:
-    description: Allows access to /addhuntpoint and /removehuntpoint commands.
+    description: Allows access to /addhuntpoint, /removehuntpoint, and /huntmode commands.
