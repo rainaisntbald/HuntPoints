@@ -2,3 +2,23 @@ name: HuntPoints
 version: '1.0-SNAPSHOT'
 main: org.iridiummc.huntPoints.HuntPoints
 api-version: '1.21'
+commands:
+  addhuntpoint:
+    description: Adds a block coordinate as a hunt point.
+    usage: /addhuntpoint <x> <y> <z>
+    permission: huntpoint.admin
+    permission-message: You do not have permission to use this command.
+  removehuntpoint:
+    description: Removes a block coordinate as a hunt point.
+    usage: /removehuntpoint <x> <y> <z>
+    permission: huntpoint.admin
+    permission-message: You do not have permission to use this command.
+  huntmode:
+    description: Sets player into hunt mode, allowing them to edit huntpoints by left-clicking
+    usage: /huntmode
+    permission: huntpoint.admin
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  huntpoint.admin:
+    description: Allows access to /addhuntpoint and /removehuntpoint commands.
